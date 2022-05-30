@@ -6,10 +6,7 @@
  *
  ***/
 
-import axios from "axios";
-import { useEffect, useState } from "react";
 
-/* 
  const waitFor = (delay:number) => {
    return new Promise((res,rej) => {
       setTimeout(res,delay)
@@ -19,7 +16,7 @@ import { useEffect, useState } from "react";
  waitFor(5000).then(()=>{
    console.log(1)
  })
- console.log('second') */
+ console.log('second') 
 
 /***
  *
@@ -28,11 +25,11 @@ import { useEffect, useState } from "react";
  * add(1)(2)(3)(4)() 10
  */
 
-/*  const add = (a:number) => (b:number| undefined) => {
+ const add = (a:number) => (b:number| undefined) => {
     if(typeof b !== 'undefined') return add(a+b)
     return a;
  }
- console.log(add(1)(2)(0)(4)()); */
+ console.log(add(1)(2)(0)(4)()); 
 
 /***
   * 
@@ -45,6 +42,7 @@ import { useEffect, useState } from "react";
   * 
   */
 
+import { useEffect, useState } from "react";
 interface Album {
   albumId: number;
   id: number;
