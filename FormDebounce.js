@@ -59,8 +59,8 @@ const App = () => {
   };
   const debounce = (cb,delay=500) => {
     let timer;
-    if (timer) clearTimeout(timer);
     return function(...args){
+    if (timer) clearTimeout(timer);
       timer = setTimeout(() => {
         cb(...args)
       },delay)
@@ -120,8 +120,8 @@ export default App;
    };
    const debounce = (cb,delay=500) => {
      let timer;
-     if (timer) clearTimeout(timer);
      return function(...args){
+       if (timer) clearTimeout(timer);
        timer = setTimeout(() => {
          cb(...args)
        },delay)
@@ -228,10 +228,10 @@ function ReactForm() {
   const debounce = (callback, delay) => {
     // add your debounce logic here
     let timer;
+    return function (...args) {
     if (timer) {
       clearTimeout(timer);
     }
-    return function (...args) {
       timer = setTimeout(() => callback(...args), delay);
     };
   };
