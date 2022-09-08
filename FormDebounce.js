@@ -18,6 +18,11 @@
  })
  console.log('second') 
 
+// output : 
+// first
+// second
+// (after 5 seconds) 1
+
 /***
  *
  * currying
